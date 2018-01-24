@@ -1,0 +1,1004 @@
+<?xml version='1.0' encoding='utf-8' ?>
+
+<!-- build 10400.17.1206.1554                               -->
+<workbook original-version='10.4' source-build='10.4.2 (10400.17.1206.1554)' source-platform='mac' version='10.4' xmlns:user='http://www.tableausoftware.com/xml/user'>
+  <preferences>
+    <preference name='ui.encoding.shelf.height' value='24' />
+    <preference name='ui.shelf.height' value='26' />
+  </preferences>
+  <datasources>
+    <datasource caption='ucr/human-trafficking-2016' inline='true' name='federated.09zqdnj138ftkw18m2anc0d45dc1' version='10.4'>
+      <connection class='federated'>
+        <named-connections>
+          <named-connection caption='ucr/human-trafficking-2016' name='webdata-direct.0urt6kr1q8n8k011brjil1oucbvn'>
+            <connection APIVersion='' authType='none' authentication='no' channel='https' class='webdata-direct' connectionData='{&quot;dataset&quot;:&quot;ucr/human-trafficking-2016&quot;,&quot;apiToken&quot;:&quot;eyJhbGciOiJIUzUxMiJ9.eyJzdWIiOiJkYXRhLWRvdC13b3JsZC10YWJsZWF1OmFuamFsaW11dGhhMTAiLCJpc3MiOiJjbGllbnQ6ZGF0YS1kb3Qtd29ybGQtdGFibGVhdTphZ2VudDphbmphbGltdXRoYTEwOjo1ZWNkZGIxNi00ZTg5LTQ5MDctYTNkOC0wMjE1MTU5MDIzY2UiLCJpYXQiOjE1MTY1OTQyNjYsInJvbGUiOlsidXNlcl9hcGlfcmVhZCJdLCJleHAiOjE1MjE3NzgyNjYsImdlbmVyYWwtcHVycG9zZSI6dHJ1ZX0.hhduxrUOeXHj3NMNCVbk12GmZzrpiPN37gYpMqRgi19PuHECl36Sc1Wxgn-MsYymugK7Vj1XmyyX6XuXtn_pQQ&quot;,&quot;version&quot;:&quot;1.0.1&quot;}' connectionName='ucr/human-trafficking-2016' filename='' increment-key='' path='/' port='443' scriptVersion='' secondary_whitelist='' server='tableau.data.world' urlQuery='dataset_name=ucr/human-trafficking-2016' username='' usernameAlias='' />
+          </named-connection>
+        </named-connections>
+        <relation connection='webdata-direct.0urt6kr1q8n8k011brjil1oucbvn' name='16tbl01' table='[16tbl01]' type='table' />
+        <metadata-records>
+          <metadata-record class='column'>
+            <remote-name>column_a</remote-name>
+            <remote-type>-1</remote-type>
+            <local-name>[column_a]</local-name>
+            <parent-name>[16tbl01]</parent-name>
+            <remote-alias>Column A</remote-alias>
+            <ordinal>0</ordinal>
+            <caption>Column A</caption>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <contains-null>true</contains-null>
+            <attributes>
+              <attribute datatype='string' name='RemoteTypeName'>&quot;string&quot;</attribute>
+              <attribute datatype='boolean' name='filterable_column'>false</attribute>
+            </attributes>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>offenses</remote-name>
+            <remote-type>-1</remote-type>
+            <local-name>[offenses]</local-name>
+            <parent-name>[16tbl01]</parent-name>
+            <remote-alias>Offenses</remote-alias>
+            <ordinal>1</ordinal>
+            <caption>Offenses</caption>
+            <local-type>integer</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <attributes>
+              <attribute datatype='string' name='RemoteTypeName'>&quot;int&quot;</attribute>
+              <attribute datatype='boolean' name='filterable_column'>false</attribute>
+            </attributes>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>total_cleared</remote-name>
+            <remote-type>-1</remote-type>
+            <local-name>[total_cleared]</local-name>
+            <parent-name>[16tbl01]</parent-name>
+            <remote-alias>Total  &#10;cleared</remote-alias>
+            <ordinal>2</ordinal>
+            <caption>Total  &#10;cleared</caption>
+            <local-type>integer</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <attributes>
+              <attribute datatype='string' name='RemoteTypeName'>&quot;int&quot;</attribute>
+              <attribute datatype='boolean' name='filterable_column'>false</attribute>
+            </attributes>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>clearances_under_18</remote-name>
+            <remote-type>-1</remote-type>
+            <local-name>[clearances_under_18]</local-name>
+            <parent-name>[16tbl01]</parent-name>
+            <remote-alias>Clearances &#10;under 18</remote-alias>
+            <ordinal>3</ordinal>
+            <caption>Clearances &#10;under 18</caption>
+            <local-type>integer</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <attributes>
+              <attribute datatype='string' name='RemoteTypeName'>&quot;int&quot;</attribute>
+              <attribute datatype='boolean' name='filterable_column'>false</attribute>
+            </attributes>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>offenses_2</remote-name>
+            <remote-type>-1</remote-type>
+            <local-name>[offenses_2]</local-name>
+            <parent-name>[16tbl01]</parent-name>
+            <remote-alias>Offenses</remote-alias>
+            <ordinal>4</ordinal>
+            <caption>Offenses</caption>
+            <local-type>integer</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <attributes>
+              <attribute datatype='string' name='RemoteTypeName'>&quot;int&quot;</attribute>
+              <attribute datatype='boolean' name='filterable_column'>false</attribute>
+            </attributes>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>total_cleared_2</remote-name>
+            <remote-type>-1</remote-type>
+            <local-name>[total_cleared_2]</local-name>
+            <parent-name>[16tbl01]</parent-name>
+            <remote-alias>Total &#10;cleared</remote-alias>
+            <ordinal>5</ordinal>
+            <caption>Total &#10;cleared</caption>
+            <local-type>integer</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <attributes>
+              <attribute datatype='string' name='RemoteTypeName'>&quot;int&quot;</attribute>
+              <attribute datatype='boolean' name='filterable_column'>false</attribute>
+            </attributes>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>clearances_under_18_2</remote-name>
+            <remote-type>-1</remote-type>
+            <local-name>[clearances_under_18_2]</local-name>
+            <parent-name>[16tbl01]</parent-name>
+            <remote-alias>Clearances &#10;under 18</remote-alias>
+            <ordinal>6</ordinal>
+            <caption>Clearances &#10;under 18</caption>
+            <local-type>boolean</local-type>
+            <aggregation>Count</aggregation>
+            <contains-null>true</contains-null>
+            <attributes>
+              <attribute datatype='string' name='RemoteTypeName'>&quot;bool&quot;</attribute>
+              <attribute datatype='boolean' name='filterable_column'>false</attribute>
+            </attributes>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>offenses_3</remote-name>
+            <remote-type>-1</remote-type>
+            <local-name>[offenses_3]</local-name>
+            <parent-name>[16tbl01]</parent-name>
+            <remote-alias>Offenses</remote-alias>
+            <ordinal>7</ordinal>
+            <caption>Offenses</caption>
+            <local-type>integer</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <attributes>
+              <attribute datatype='string' name='RemoteTypeName'>&quot;int&quot;</attribute>
+              <attribute datatype='boolean' name='filterable_column'>false</attribute>
+            </attributes>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>total_cleared_3</remote-name>
+            <remote-type>-1</remote-type>
+            <local-name>[total_cleared_3]</local-name>
+            <parent-name>[16tbl01]</parent-name>
+            <remote-alias>Total &#10;cleared</remote-alias>
+            <ordinal>8</ordinal>
+            <caption>Total &#10;cleared</caption>
+            <local-type>integer</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <attributes>
+              <attribute datatype='string' name='RemoteTypeName'>&quot;int&quot;</attribute>
+              <attribute datatype='boolean' name='filterable_column'>false</attribute>
+            </attributes>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>clearances_under_18_3</remote-name>
+            <remote-type>-1</remote-type>
+            <local-name>[clearances_under_18_3]</local-name>
+            <parent-name>[16tbl01]</parent-name>
+            <remote-alias>Clearances &#10;under 18</remote-alias>
+            <ordinal>9</ordinal>
+            <caption>Clearances &#10;under 18</caption>
+            <local-type>integer</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <attributes>
+              <attribute datatype='string' name='RemoteTypeName'>&quot;int&quot;</attribute>
+              <attribute datatype='boolean' name='filterable_column'>false</attribute>
+            </attributes>
+          </metadata-record>
+        </metadata-records>
+      </connection>
+      <aliases enabled='yes' />
+      <column caption='Measure Names' datatype='string' name='[:Measure Names]' role='dimension' type='nominal' />
+      <column caption='Measure Values' datatype='real' name='[Multiple Values]' role='measure' type='quantitative' />
+      <column caption='Number of Records' datatype='integer' name='[Number of Records]' role='measure' type='quantitative' user:auto-column='numrec'>
+        <calculation class='tableau' formula='1' />
+      </column>
+      <column caption='Clearances &#10;under 18' datatype='integer' name='[clearances_under_18]' role='measure' type='quantitative' />
+      <column caption='Clearances &#10;under 18 (16tbl01)' datatype='boolean' name='[clearances_under_18_2]' role='dimension' type='nominal' />
+      <column caption='Clearances &#10;under 18 (16tbl01) 1' datatype='integer' name='[clearances_under_18_3]' role='measure' type='quantitative' />
+      <column caption='Column A' datatype='string' name='[column_a]' role='dimension' type='nominal' />
+      <column caption='Offenses' datatype='integer' name='[offenses]' role='measure' type='quantitative' />
+      <column caption='Offenses (16tbl01)' datatype='integer' name='[offenses_2]' role='measure' type='quantitative' />
+      <column caption='Offenses (16tbl01) 1' datatype='integer' name='[offenses_3]' role='measure' type='quantitative' />
+      <column caption='Total  &#10;cleared' datatype='integer' name='[total_cleared]' role='measure' type='quantitative' />
+      <column caption='Total &#10;cleared' datatype='integer' name='[total_cleared_2]' role='measure' type='quantitative' />
+      <column caption='Total &#10;cleared (16tbl01)' datatype='integer' name='[total_cleared_3]' role='measure' type='quantitative' />
+      <column-instance column='[clearances_under_18]' derivation='CountD' name='[ctd:clearances_under_18:ok]' pivot='key' type='ordinal' />
+      <column-instance column='[clearances_under_18]' derivation='Sum' name='[cum:sum:clearances_under_18:ok]' pivot='key' type='ordinal'>
+        <table-calc aggregation='Sum' ordering-type='Columns' type='CumTotal' />
+      </column-instance>
+      <column-instance column='[clearances_under_18]' derivation='Sum' name='[cum:sum:clearances_under_18:qk]' pivot='key' type='quantitative'>
+        <table-calc aggregation='Sum' ordering-type='Columns' type='CumTotal' />
+      </column-instance>
+      <column-instance aggregation-param='95' column='[clearances_under_18]' derivation='Percentile' name='[prc95:clearances_under_18:ok]' pivot='key' type='ordinal' />
+      <column-instance column='[clearances_under_18]' derivation='Sum' name='[rank:sum:clearances_under_18:ok]' pivot='key' type='ordinal'>
+        <table-calc ordering-type='Columns' rank-options='Competition,Descending' type='Rank' />
+      </column-instance>
+      <column-instance column='[clearances_under_18]' derivation='Sum' name='[sum:clearances_under_18:ok]' pivot='key' type='ordinal' />
+      <column-instance column='[clearances_under_18]' derivation='Sum' name='[sum:clearances_under_18:qk]' pivot='key' type='quantitative' />
+      <column-instance column='[offenses]' derivation='Sum' name='[sum:offenses:qk]' pivot='key' type='quantitative' />
+      <extract count='-1' enabled='true' units='records'>
+        <connection class='dataengine' dbname='/Users/anjalimutha/Documents/My Tableau Repository/Datasources/federated.09zqdnj138ftkw18m2anc0d45dc1_0vftbx3069jb4v15ohj1l1qhx55p.tde' schema='Extract' tablename='Extract' update-time='01/22/2018 04:25:28 AM'>
+          <relation name='Extract' table='[Extract].[Extract]' type='table' />
+          <refresh>
+            <refresh-event add-from-file-path='' increment-value='%null%' refresh-type='create' rows-inserted='36' timestamp-start='2018-01-22 04:25:28.709' />
+          </refresh>
+          <metadata-records>
+            <metadata-record class='column'>
+              <remote-name>clearances_under_18</remote-name>
+              <remote-type>16</remote-type>
+              <local-name>[clearances_under_18]</local-name>
+              <parent-name>[Extract]</parent-name>
+              <remote-alias>clearances_under_18</remote-alias>
+              <ordinal>0</ordinal>
+              <family>16tbl01</family>
+              <local-type>integer</local-type>
+              <aggregation>Sum</aggregation>
+              <approx-count>5</approx-count>
+              <contains-null>false</contains-null>
+              <statistics>
+                <statistic aggregation='Sum' datatype='real'>49.0</statistic>
+                <statistic aggregation='Avg' datatype='real'>1.3611111111111112</statistic>
+                <statistic aggregation='Min' datatype='integer'>0</statistic>
+                <statistic aggregation='Max' datatype='integer'>35</statistic>
+                <statistic aggregation='Stdev' datatype='real'>5.8218935445819042</statistic>
+                <statistic aggregation='StdevP' datatype='real'>5.740464449743194</statistic>
+                <statistic aggregation='Var' datatype='real'>33.894444444444446</statistic>
+                <statistic aggregation='VarP' datatype='real'>32.95293209876543</statistic>
+                <statistic aggregation='Count' datatype='integer'>36</statistic>
+                <statistic aggregation='SumXSqr' datatype='real'>1253.0</statistic>
+              </statistics>
+              <attributes>
+                <attribute datatype='integer' name='DebugRemoteMetadata (size)'>1</attribute>
+                <attribute datatype='integer' name='DebugRemoteMetadata (sort-position)'>1</attribute>
+                <attribute datatype='string' name='DebugRemoteMetadata (sort-sense)'>&quot;asc&quot;</attribute>
+                <attribute datatype='string' name='DebugRemoteType'>&quot;sint8&quot;</attribute>
+              </attributes>
+            </metadata-record>
+            <metadata-record class='column'>
+              <remote-name>clearances_under_18_2</remote-name>
+              <remote-type>11</remote-type>
+              <local-name>[clearances_under_18_2]</local-name>
+              <parent-name>[Extract]</parent-name>
+              <remote-alias>clearances_under_18_2</remote-alias>
+              <ordinal>1</ordinal>
+              <family>16tbl01</family>
+              <local-type>boolean</local-type>
+              <aggregation>Count</aggregation>
+              <approx-count>1</approx-count>
+              <contains-null>false</contains-null>
+              <statistics>
+                <statistic aggregation='Min' datatype='boolean'>false</statistic>
+                <statistic aggregation='Max' datatype='boolean'>false</statistic>
+                <statistic aggregation='Count' datatype='integer'>36</statistic>
+                <statistic aggregation='Median' datatype='boolean'>false</statistic>
+              </statistics>
+              <attributes>
+                <attribute datatype='string' name='DebugRemoteMetadata (ordered)'>&quot;asc&quot;</attribute>
+                <attribute datatype='integer' name='DebugRemoteMetadata (size)'>1</attribute>
+                <attribute datatype='string' name='DebugRemoteType'>&quot;bool&quot;</attribute>
+              </attributes>
+            </metadata-record>
+            <metadata-record class='column'>
+              <remote-name>clearances_under_18_3</remote-name>
+              <remote-type>16</remote-type>
+              <local-name>[clearances_under_18_3]</local-name>
+              <parent-name>[Extract]</parent-name>
+              <remote-alias>clearances_under_18_3</remote-alias>
+              <ordinal>2</ordinal>
+              <family>16tbl01</family>
+              <local-type>integer</local-type>
+              <aggregation>Sum</aggregation>
+              <approx-count>5</approx-count>
+              <contains-null>false</contains-null>
+              <statistics>
+                <statistic aggregation='Sum' datatype='real'>49.0</statistic>
+                <statistic aggregation='Avg' datatype='real'>1.3611111111111112</statistic>
+                <statistic aggregation='Min' datatype='integer'>0</statistic>
+                <statistic aggregation='Max' datatype='integer'>35</statistic>
+                <statistic aggregation='Stdev' datatype='real'>5.8218935445819042</statistic>
+                <statistic aggregation='StdevP' datatype='real'>5.740464449743194</statistic>
+                <statistic aggregation='Var' datatype='real'>33.894444444444446</statistic>
+                <statistic aggregation='VarP' datatype='real'>32.95293209876543</statistic>
+                <statistic aggregation='Count' datatype='integer'>36</statistic>
+                <statistic aggregation='SumXSqr' datatype='real'>1253.0</statistic>
+              </statistics>
+              <attributes>
+                <attribute datatype='integer' name='DebugRemoteMetadata (size)'>1</attribute>
+                <attribute datatype='string' name='DebugRemoteType'>&quot;sint8&quot;</attribute>
+              </attributes>
+            </metadata-record>
+            <metadata-record class='column'>
+              <remote-name>column_a</remote-name>
+              <remote-type>129</remote-type>
+              <local-name>[column_a]</local-name>
+              <parent-name>[Extract]</parent-name>
+              <remote-alias>column_a</remote-alias>
+              <ordinal>3</ordinal>
+              <family>16tbl01</family>
+              <local-type>string</local-type>
+              <aggregation>Count</aggregation>
+              <approx-count>36</approx-count>
+              <scale>1</scale>
+              <width>1073741823</width>
+              <contains-null>false</contains-null>
+              <collation flag='0' name='LROOT' />
+              <statistics>
+                <statistic aggregation='Min' datatype='string'>&quot;Alaska&quot;</statistic>
+                <statistic aggregation='Max' datatype='string'>&quot;Wyoming&quot;</statistic>
+                <statistic aggregation='Count' datatype='integer'>36</statistic>
+                <statistic aggregation='Median' datatype='string'>&quot;Montana&quot;</statistic>
+              </statistics>
+              <attributes>
+                <attribute datatype='string' name='DebugRemoteCollation'>&quot;root&quot;</attribute>
+                <attribute datatype='boolean' name='DebugRemoteMetadata (comparable)'>true</attribute>
+                <attribute datatype='string' name='DebugRemoteMetadata (compression)'>&quot;heap&quot;</attribute>
+                <attribute datatype='boolean' name='DebugRemoteMetadata (distinct)'>true</attribute>
+                <attribute datatype='string' name='DebugRemoteMetadata (ordered)'>&quot;asc&quot;</attribute>
+                <attribute datatype='integer' name='DebugRemoteMetadata (size)'>4294967292</attribute>
+                <attribute datatype='integer' name='DebugRemoteMetadata (sort-position)'>0</attribute>
+                <attribute datatype='string' name='DebugRemoteMetadata (sort-sense)'>&quot;asc&quot;</attribute>
+                <attribute datatype='integer' name='DebugRemoteMetadata (storagewidth)'>2</attribute>
+                <attribute datatype='boolean' name='DebugRemoteMetadata (unique)'>true</attribute>
+                <attribute datatype='string' name='DebugRemoteType'>&quot;str&quot;</attribute>
+              </attributes>
+            </metadata-record>
+            <metadata-record class='column'>
+              <remote-name>offenses</remote-name>
+              <remote-type>2</remote-type>
+              <local-name>[offenses]</local-name>
+              <parent-name>[Extract]</parent-name>
+              <remote-alias>offenses</remote-alias>
+              <ordinal>4</ordinal>
+              <family>16tbl01</family>
+              <local-type>integer</local-type>
+              <aggregation>Sum</aggregation>
+              <approx-count>22</approx-count>
+              <contains-null>false</contains-null>
+              <statistics>
+                <statistic aggregation='Sum' datatype='real'>1007.0</statistic>
+                <statistic aggregation='Avg' datatype='real'>27.972222222222221</statistic>
+                <statistic aggregation='Min' datatype='integer'>0</statistic>
+                <statistic aggregation='Max' datatype='integer'>235</statistic>
+                <statistic aggregation='Stdev' datatype='real'>52.33053526035178</statistic>
+                <statistic aggregation='StdevP' datatype='real'>51.598603615424793</statistic>
+                <statistic aggregation='Var' datatype='real'>2738.4849206349209</statistic>
+                <statistic aggregation='VarP' datatype='real'>2662.4158950617284</statistic>
+                <statistic aggregation='Count' datatype='integer'>36</statistic>
+                <statistic aggregation='SumXSqr' datatype='real'>124015.0</statistic>
+              </statistics>
+              <attributes>
+                <attribute datatype='integer' name='DebugRemoteMetadata (size)'>2</attribute>
+                <attribute datatype='string' name='DebugRemoteType'>&quot;sint16&quot;</attribute>
+              </attributes>
+            </metadata-record>
+            <metadata-record class='column'>
+              <remote-name>offenses_2</remote-name>
+              <remote-type>16</remote-type>
+              <local-name>[offenses_2]</local-name>
+              <parent-name>[Extract]</parent-name>
+              <remote-alias>offenses_2</remote-alias>
+              <ordinal>5</ordinal>
+              <family>16tbl01</family>
+              <local-type>integer</local-type>
+              <aggregation>Sum</aggregation>
+              <approx-count>8</approx-count>
+              <contains-null>false</contains-null>
+              <statistics>
+                <statistic aggregation='Sum' datatype='real'>189.0</statistic>
+                <statistic aggregation='Avg' datatype='real'>5.25</statistic>
+                <statistic aggregation='Min' datatype='integer'>0</statistic>
+                <statistic aggregation='Max' datatype='integer'>127</statistic>
+                <statistic aggregation='Stdev' datatype='real'>21.232555865260984</statistic>
+                <statistic aggregation='StdevP' datatype='real'>20.935582416333947</statistic>
+                <statistic aggregation='Var' datatype='real'>450.82142857142856</statistic>
+                <statistic aggregation='VarP' datatype='real'>438.29861111111109</statistic>
+                <statistic aggregation='Count' datatype='integer'>36</statistic>
+                <statistic aggregation='SumXSqr' datatype='real'>16771.0</statistic>
+              </statistics>
+              <attributes>
+                <attribute datatype='integer' name='DebugRemoteMetadata (size)'>1</attribute>
+                <attribute datatype='string' name='DebugRemoteType'>&quot;sint8&quot;</attribute>
+              </attributes>
+            </metadata-record>
+            <metadata-record class='column'>
+              <remote-name>offenses_3</remote-name>
+              <remote-type>2</remote-type>
+              <local-name>[offenses_3]</local-name>
+              <parent-name>[Extract]</parent-name>
+              <remote-alias>offenses_3</remote-alias>
+              <ordinal>6</ordinal>
+              <family>16tbl01</family>
+              <local-type>integer</local-type>
+              <aggregation>Sum</aggregation>
+              <approx-count>23</approx-count>
+              <contains-null>false</contains-null>
+              <statistics>
+                <statistic aggregation='Sum' datatype='real'>1196.0</statistic>
+                <statistic aggregation='Avg' datatype='real'>33.222222222222221</statistic>
+                <statistic aggregation='Min' datatype='integer'>0</statistic>
+                <statistic aggregation='Max' datatype='integer'>257</statistic>
+                <statistic aggregation='Stdev' datatype='real'>62.631854565781509</statistic>
+                <statistic aggregation='StdevP' datatype='real'>61.755841429109232</statistic>
+                <statistic aggregation='Var' datatype='real'>3922.7492063492064</statistic>
+                <statistic aggregation='VarP' datatype='real'>3813.7839506172841</statistic>
+                <statistic aggregation='Count' datatype='integer'>36</statistic>
+                <statistic aggregation='SumXSqr' datatype='real'>177030.0</statistic>
+              </statistics>
+              <attributes>
+                <attribute datatype='integer' name='DebugRemoteMetadata (size)'>2</attribute>
+                <attribute datatype='string' name='DebugRemoteType'>&quot;sint16&quot;</attribute>
+              </attributes>
+            </metadata-record>
+            <metadata-record class='column'>
+              <remote-name>total_cleared</remote-name>
+              <remote-type>2</remote-type>
+              <local-name>[total_cleared]</local-name>
+              <parent-name>[Extract]</parent-name>
+              <remote-alias>total_cleared</remote-alias>
+              <ordinal>7</ordinal>
+              <family>16tbl01</family>
+              <local-type>integer</local-type>
+              <aggregation>Sum</aggregation>
+              <approx-count>17</approx-count>
+              <contains-null>false</contains-null>
+              <statistics>
+                <statistic aggregation='Sum' datatype='real'>595.0</statistic>
+                <statistic aggregation='Avg' datatype='real'>16.527777777777779</statistic>
+                <statistic aggregation='Min' datatype='integer'>0</statistic>
+                <statistic aggregation='Max' datatype='integer'>191</statistic>
+                <statistic aggregation='Stdev' datatype='real'>36.509479090943813</statistic>
+                <statistic aggregation='StdevP' datatype='real'>35.998831856905142</statistic>
+                <statistic aggregation='Var' datatype='real'>1332.9420634920634</statistic>
+                <statistic aggregation='VarP' datatype='real'>1295.9158950617284</statistic>
+                <statistic aggregation='Count' datatype='integer'>36</statistic>
+                <statistic aggregation='SumXSqr' datatype='real'>56487.0</statistic>
+              </statistics>
+              <attributes>
+                <attribute datatype='integer' name='DebugRemoteMetadata (size)'>2</attribute>
+                <attribute datatype='string' name='DebugRemoteType'>&quot;sint16&quot;</attribute>
+              </attributes>
+            </metadata-record>
+            <metadata-record class='column'>
+              <remote-name>total_cleared_2</remote-name>
+              <remote-type>16</remote-type>
+              <local-name>[total_cleared_2]</local-name>
+              <parent-name>[Extract]</parent-name>
+              <remote-alias>total_cleared_2</remote-alias>
+              <ordinal>8</ordinal>
+              <family>16tbl01</family>
+              <local-type>integer</local-type>
+              <aggregation>Sum</aggregation>
+              <approx-count>8</approx-count>
+              <contains-null>false</contains-null>
+              <statistics>
+                <statistic aggregation='Sum' datatype='real'>59.0</statistic>
+                <statistic aggregation='Avg' datatype='real'>1.6388888888888888</statistic>
+                <statistic aggregation='Min' datatype='integer'>0</statistic>
+                <statistic aggregation='Max' datatype='integer'>27</statistic>
+                <statistic aggregation='Stdev' datatype='real'>4.7937624816169953</statistic>
+                <statistic aggregation='StdevP' datatype='real'>4.726713550412625</statistic>
+                <statistic aggregation='Var' datatype='real'>22.980158730158731</statistic>
+                <statistic aggregation='VarP' datatype='real'>22.341820987654319</statistic>
+                <statistic aggregation='Count' datatype='integer'>36</statistic>
+                <statistic aggregation='SumXSqr' datatype='real'>901.0</statistic>
+              </statistics>
+              <attributes>
+                <attribute datatype='integer' name='DebugRemoteMetadata (size)'>1</attribute>
+                <attribute datatype='string' name='DebugRemoteType'>&quot;sint8&quot;</attribute>
+              </attributes>
+            </metadata-record>
+            <metadata-record class='column'>
+              <remote-name>total_cleared_3</remote-name>
+              <remote-type>2</remote-type>
+              <local-name>[total_cleared_3]</local-name>
+              <parent-name>[Extract]</parent-name>
+              <remote-alias>total_cleared_3</remote-alias>
+              <ordinal>9</ordinal>
+              <family>16tbl01</family>
+              <local-type>integer</local-type>
+              <aggregation>Sum</aggregation>
+              <approx-count>18</approx-count>
+              <contains-null>false</contains-null>
+              <statistics>
+                <statistic aggregation='Sum' datatype='real'>654.0</statistic>
+                <statistic aggregation='Avg' datatype='real'>18.166666666666668</statistic>
+                <statistic aggregation='Min' datatype='integer'>0</statistic>
+                <statistic aggregation='Max' datatype='integer'>191</statistic>
+                <statistic aggregation='Stdev' datatype='real'>37.584571302597027</statistic>
+                <statistic aggregation='StdevP' datatype='real'>37.058887073293377</statistic>
+                <statistic aggregation='Var' datatype='real'>1412.5999999999999</statistic>
+                <statistic aggregation='VarP' datatype='real'>1373.3611111111111</statistic>
+                <statistic aggregation='Count' datatype='integer'>36</statistic>
+                <statistic aggregation='SumXSqr' datatype='real'>61322.0</statistic>
+              </statistics>
+              <attributes>
+                <attribute datatype='integer' name='DebugRemoteMetadata (size)'>2</attribute>
+                <attribute datatype='string' name='DebugRemoteType'>&quot;sint16&quot;</attribute>
+              </attributes>
+            </metadata-record>
+          </metadata-records>
+        </connection>
+      </extract>
+      <layout dim-ordering='alphabetic' dim-percentage='0.304609' measure-ordering='alphabetic' measure-percentage='0.695391' show-structure='true' />
+      <style>
+        <style-rule element='mark'>
+          <encoding attr='color' field='[:Measure Names]' type='palette'>
+            <map to='#4e79a7'>
+              <bucket>&quot;[federated.09zqdnj138ftkw18m2anc0d45dc1].[cum:sum:clearances_under_18:qk]&quot;</bucket>
+            </map>
+            <map to='#4e79a7'>
+              <bucket>&quot;[federated.09zqdnj138ftkw18m2anc0d45dc1].[sum:clearances_under_18:qk]&quot;</bucket>
+            </map>
+            <map to='#f28e2b'>
+              <bucket>&quot;[federated.09zqdnj138ftkw18m2anc0d45dc1].[sum:offenses:qk]&quot;</bucket>
+            </map>
+          </encoding>
+          <encoding attr='color' field='[rank:sum:clearances_under_18:ok]' type='palette'>
+            <map to='#4e79a7'>
+              <bucket>0</bucket>
+            </map>
+            <map to='#4e79a7'>
+              <bucket>1</bucket>
+            </map>
+            <map to='#59a14f'>
+              <bucket>8</bucket>
+            </map>
+            <map to='#59a14f'>
+              <bucket>10</bucket>
+            </map>
+            <map to='#76b7b2'>
+              <bucket>5</bucket>
+            </map>
+            <map to='#76b7b2'>
+              <bucket>7</bucket>
+            </map>
+            <map to='#9c755f'>
+              <bucket>48</bucket>
+            </map>
+            <map to='#b07aa1'>
+              <bucket>44</bucket>
+            </map>
+            <map to='#bab0ac'>
+              <bucket>49</bucket>
+            </map>
+            <map to='#e15759'>
+              <bucket>3</bucket>
+            </map>
+            <map to='#e15759'>
+              <bucket>4</bucket>
+            </map>
+            <map to='#edc948'>
+              <bucket>43</bucket>
+            </map>
+            <map to='#f28e2b'>
+              <bucket>2</bucket>
+            </map>
+            <map to='#ff9da7'>
+              <bucket>46</bucket>
+            </map>
+          </encoding>
+          <encoding attr='color' field='[cum:sum:clearances_under_18:ok]' type='palette'>
+            <map to='#4e79a7'>
+              <bucket>0</bucket>
+            </map>
+            <map to='#4e79a7'>
+              <bucket>1</bucket>
+            </map>
+            <map to='#59a14f'>
+              <bucket>8</bucket>
+            </map>
+            <map to='#59a14f'>
+              <bucket>10</bucket>
+            </map>
+            <map to='#76b7b2'>
+              <bucket>5</bucket>
+            </map>
+            <map to='#76b7b2'>
+              <bucket>7</bucket>
+            </map>
+            <map to='#9c755f'>
+              <bucket>48</bucket>
+            </map>
+            <map to='#b07aa1'>
+              <bucket>44</bucket>
+            </map>
+            <map to='#bab0ac'>
+              <bucket>49</bucket>
+            </map>
+            <map to='#e15759'>
+              <bucket>3</bucket>
+            </map>
+            <map to='#e15759'>
+              <bucket>4</bucket>
+            </map>
+            <map to='#edc948'>
+              <bucket>43</bucket>
+            </map>
+            <map to='#f28e2b'>
+              <bucket>2</bucket>
+            </map>
+            <map to='#ff9da7'>
+              <bucket>46</bucket>
+            </map>
+          </encoding>
+          <encoding attr='color' field='[sum:clearances_under_18:ok]' type='palette'>
+            <map to='#4e79a7'>
+              <bucket>0</bucket>
+            </map>
+            <map to='#4e79a7'>
+              <bucket>1</bucket>
+            </map>
+            <map to='#59a14f'>
+              <bucket>8</bucket>
+            </map>
+            <map to='#59a14f'>
+              <bucket>10</bucket>
+            </map>
+            <map to='#59a14f'>
+              <bucket>35</bucket>
+            </map>
+            <map to='#76b7b2'>
+              <bucket>5</bucket>
+            </map>
+            <map to='#76b7b2'>
+              <bucket>7</bucket>
+            </map>
+            <map to='#9c755f'>
+              <bucket>48</bucket>
+            </map>
+            <map to='#b07aa1'>
+              <bucket>44</bucket>
+            </map>
+            <map to='#bab0ac'>
+              <bucket>49</bucket>
+            </map>
+            <map to='#e15759'>
+              <bucket>3</bucket>
+            </map>
+            <map to='#e15759'>
+              <bucket>4</bucket>
+            </map>
+            <map to='#edc948'>
+              <bucket>43</bucket>
+            </map>
+            <map to='#f28e2b'>
+              <bucket>2</bucket>
+            </map>
+            <map to='#ff9da7'>
+              <bucket>46</bucket>
+            </map>
+          </encoding>
+          <encoding attr='color' field='[ctd:clearances_under_18:ok]' type='palette'>
+            <map to='#4e79a7'>
+              <bucket>0</bucket>
+            </map>
+            <map to='#4e79a7'>
+              <bucket>1</bucket>
+            </map>
+            <map to='#59a14f'>
+              <bucket>8</bucket>
+            </map>
+            <map to='#59a14f'>
+              <bucket>10</bucket>
+            </map>
+            <map to='#59a14f'>
+              <bucket>35</bucket>
+            </map>
+            <map to='#76b7b2'>
+              <bucket>5</bucket>
+            </map>
+            <map to='#76b7b2'>
+              <bucket>7</bucket>
+            </map>
+            <map to='#9c755f'>
+              <bucket>48</bucket>
+            </map>
+            <map to='#b07aa1'>
+              <bucket>44</bucket>
+            </map>
+            <map to='#bab0ac'>
+              <bucket>49</bucket>
+            </map>
+            <map to='#e15759'>
+              <bucket>3</bucket>
+            </map>
+            <map to='#e15759'>
+              <bucket>4</bucket>
+            </map>
+            <map to='#edc948'>
+              <bucket>43</bucket>
+            </map>
+            <map to='#f28e2b'>
+              <bucket>2</bucket>
+            </map>
+            <map to='#ff9da7'>
+              <bucket>46</bucket>
+            </map>
+          </encoding>
+          <encoding attr='color' field='[prc95:clearances_under_18:ok]' type='palette'>
+            <map to='#4e79a7'>
+              <bucket>0</bucket>
+            </map>
+            <map to='#4e79a7'>
+              <bucket>1</bucket>
+            </map>
+            <map to='#4e79a7'>
+              <bucket>0.0</bucket>
+            </map>
+            <map to='#59a14f'>
+              <bucket>8</bucket>
+            </map>
+            <map to='#59a14f'>
+              <bucket>10</bucket>
+            </map>
+            <map to='#59a14f'>
+              <bucket>35</bucket>
+            </map>
+            <map to='#59a14f'>
+              <bucket>35.0</bucket>
+            </map>
+            <map to='#76b7b2'>
+              <bucket>5</bucket>
+            </map>
+            <map to='#76b7b2'>
+              <bucket>7</bucket>
+            </map>
+            <map to='#76b7b2'>
+              <bucket>3.0</bucket>
+            </map>
+            <map to='#9c755f'>
+              <bucket>48</bucket>
+            </map>
+            <map to='#b07aa1'>
+              <bucket>44</bucket>
+            </map>
+            <map to='#bab0ac'>
+              <bucket>49</bucket>
+            </map>
+            <map to='#e15759'>
+              <bucket>3</bucket>
+            </map>
+            <map to='#e15759'>
+              <bucket>4</bucket>
+            </map>
+            <map to='#e15759'>
+              <bucket>2.0</bucket>
+            </map>
+            <map to='#edc948'>
+              <bucket>43</bucket>
+            </map>
+            <map to='#f28e2b'>
+              <bucket>2</bucket>
+            </map>
+            <map to='#f28e2b'>
+              <bucket>1.0</bucket>
+            </map>
+            <map to='#ff9da7'>
+              <bucket>46</bucket>
+            </map>
+          </encoding>
+        </style-rule>
+      </style>
+      <semantic-values>
+        <semantic-value key='[Country].[Name]' value='&quot;United States&quot;' />
+      </semantic-values>
+      <field-sort-info field-sort-order-type='alphabetical-order' />
+    </datasource>
+  </datasources>
+  <worksheets>
+    <worksheet name='Offense &amp; Clearances'>
+      <table>
+        <view>
+          <datasources>
+            <datasource caption='ucr/human-trafficking-2016' name='federated.09zqdnj138ftkw18m2anc0d45dc1' />
+          </datasources>
+          <datasource-dependencies datasource='federated.09zqdnj138ftkw18m2anc0d45dc1'>
+            <column caption='Clearances &#10;under 18' datatype='integer' name='[clearances_under_18]' role='measure' type='quantitative' />
+            <column caption='Column A' datatype='string' name='[column_a]' role='dimension' type='nominal' />
+            <column-instance column='[column_a]' derivation='None' name='[none:column_a:nk]' pivot='key' type='nominal' />
+            <column caption='Offenses' datatype='integer' name='[offenses]' role='measure' type='quantitative' />
+            <column-instance aggregation-param='95' column='[clearances_under_18]' derivation='Percentile' name='[prc95:clearances_under_18:ok]' pivot='key' type='ordinal' />
+            <column-instance column='[offenses]' derivation='Sum' name='[sum:offenses:qk]' pivot='key' type='quantitative' />
+          </datasource-dependencies>
+          <aggregation value='true' />
+        </view>
+        <style>
+          <style-rule element='mark'>
+            <encoding attr='size-bar' field='[federated.09zqdnj138ftkw18m2anc0d45dc1].[sum:offenses:qk]' field-type='quantitative' max-size='1' min-size='0.005' type='centersize' />
+          </style-rule>
+          <style-rule element='refline'>
+            <format attr='stroke-color' id='refline0' value='#000000' />
+          </style-rule>
+        </style>
+        <panes>
+          <pane selection-relaxation-option='selection-relaxation-allow'>
+            <view>
+              <breakdown value='on' />
+            </view>
+            <mark class='Automatic' />
+            <encodings>
+              <size column='[federated.09zqdnj138ftkw18m2anc0d45dc1].[sum:offenses:qk]' />
+              <color column='[federated.09zqdnj138ftkw18m2anc0d45dc1].[prc95:clearances_under_18:ok]' />
+              <text column='[federated.09zqdnj138ftkw18m2anc0d45dc1].[none:column_a:nk]' />
+            </encodings>
+            <style>
+              <style-rule element='mark'>
+                <format attr='mark-labels-show' value='true' />
+                <format attr='mark-labels-cull' value='true' />
+                <format attr='mark-labels-line-first' value='true' />
+                <format attr='mark-labels-line-last' value='true' />
+                <format attr='mark-labels-range-min' value='true' />
+                <format attr='mark-labels-range-max' value='true' />
+                <format attr='mark-labels-mode' value='all' />
+                <format attr='mark-labels-range-scope' value='pane' />
+                <format attr='mark-labels-range-field' value='' />
+              </style-rule>
+            </style>
+          </pane>
+        </panes>
+        <rows />
+        <cols />
+      </table>
+    </worksheet>
+  </worksheets>
+  <windows source-height='30'>
+    <window class='worksheet' maximized='true' name='Offense &amp; Clearances'>
+      <cards>
+        <edge name='left'>
+          <strip size='170'>
+            <card type='pages' />
+            <card type='filters' />
+            <card type='marks' />
+          </strip>
+        </edge>
+        <edge name='top'>
+          <strip size='2147483647'>
+            <card type='columns' />
+          </strip>
+          <strip size='2147483647'>
+            <card type='rows' />
+          </strip>
+          <strip size='31'>
+            <card type='title' />
+          </strip>
+        </edge>
+        <edge name='right'>
+          <strip size='160'>
+            <card pane-specification-id='0' param='[federated.09zqdnj138ftkw18m2anc0d45dc1].[prc95:clearances_under_18:ok]' type='color' />
+            <card param='[federated.09zqdnj138ftkw18m2anc0d45dc1].[prc95:clearances_under_18:ok]' type='highlighter' />
+          </strip>
+        </edge>
+      </cards>
+      <viewpoint>
+        <highlight>
+          <color-one-way>
+            <field>[federated.09zqdnj138ftkw18m2anc0d45dc1].[:Measure Names]</field>
+            <field>[federated.09zqdnj138ftkw18m2anc0d45dc1].[ctd:clearances_under_18:ok]</field>
+            <field>[federated.09zqdnj138ftkw18m2anc0d45dc1].[none:column_a:nk]</field>
+            <field>[federated.09zqdnj138ftkw18m2anc0d45dc1].[prc95:clearances_under_18:ok]</field>
+          </color-one-way>
+        </highlight>
+      </viewpoint>
+    </window>
+  </windows>
+  <thumbnails>
+    <thumbnail height='384' name='Offense &amp; Clearances' width='384'>
+      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
+      7mT1QJ3RapWk/vKbOkdGRhmqpQwMDPBft6/mE6cdzsBQlSSOePbplYx0b+KhgTxf/9i7yXIJ
+      vf0jrOnxxtC3iijLsq26YL+ufy3nXvHR7T0eSa/j5CWn8sgDM7f5C2HyuRyzOxvY3DtIz/DW
+      H7A7WsqUkow1PcMvNCaOY7o6GhgcGKZ3uLZN49KbyzMAKUDVWo0n1/W94Z/r7nvlBH+apqze
+      ODAew9KbzGsAkhQoAyBJgTIAkhQoAyBJgTIAkhQoAyBJgTIAkhQoAyBJgTIAkhQoAyBJgTIA
+      khQoAyBJgTIAkhQoAyBJgTIAkhQoAyBJgTIAkhQoAyBJgTIAkhQoAyBJgTIAkhQoAyBJgTIA
+      khQoAyBJgTIAkhQoAyBJgTIAkhQoAyBJgTIAkhQoAyBJgTIAkhQoAyBJgTIAkhQoAyBJgTIA
+      khQoAyBJgTIAkhQoAyBJgTIAkhQoAyBJgTIAkhQoAyBJgTIAkhQoAyBJgTIAkhQoAyBJgTIA
+      khQoAyBJgTIAkhQoAyBJgTIAkhQoAyBJgTIAkhQoAyBJgTIAkhQoAyBJgTIAkhQoAyBJgTIA
+      khQoAyBJgTIAkhQoAyBJgTIAkhQoAyBJgTIAkhQoAyBJgTIAkhQoAyBJgTIAkhQoAyBJgTIA
+      khQoAyBJgTIAkhQoAyBJgTIAkhQoAyBJgTIAkhQoAyBJgTIAkhQoAyBJgTIAkhQoAyBJgTIA
+      khSo3NauWMwV2Xv2fttzLJK2oKtlJumsdkZrtYkeiiaBKMuybKIHIUl68/1/Cd753lx4J7cA
+      AAAASUVORK5CYII=
+    </thumbnail>
+  </thumbnails>
+</workbook>
